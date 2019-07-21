@@ -19,7 +19,7 @@ get transport id of mumu:
   
 if no share dir, set local_share_dir to None
 
-extract feature:
+extract feature(please backup old features before run, I can't update now, I do "overwrite"):
 
 ```
 adb.extract_pic("D:\\zzzj\\1\\features")
