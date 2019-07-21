@@ -21,15 +21,16 @@ if no share dir, set local_share_dir to None
 
 extract feature:
 
-`adb.extract_pic("D:\\zzzj\\1\\features")
+```adb.extract_pic("D:\\zzzj\\1\\features")
 ec = ExtractConf()
-ec.extract_conf("D:\\zzzj\\1\\features")`
+ec.extract_conf("D:\\zzzj\\1\\features")```
 
 run:
-`matcher = Matcher("D:\\zzzj\\1\\features")
+
+```matcher = Matcher("D:\\zzzj\\1\\features")
 while True:
     img = adb.get_screenshot_fast()
     click = matcher.match_confs(img)
     if click is not None:
         adb.tap(click[0], click[1])
-    time.sleep(1.0)`
+    time.sleep(1.0)```
