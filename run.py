@@ -323,7 +323,8 @@ class Matcher(object):
     
 if __name__ == "__main__":
     adb = ADB(1, "D:\\zzzj\\1", "/data/Share", "D:\\zzzj\\1\\Share")
-    matcher = Matcher("D:\\zzzj\\1\\features")
+    # match screenshot online... comment this while extract feature
+    matcher = Matcher("D:\\zzzj\\1\\features1")
     while True:
         img = adb.get_screenshot_fast()
         click = matcher.match_confs(img)
@@ -331,7 +332,7 @@ if __name__ == "__main__":
             adb.tap(click[0], click[1])
         time.sleep(1.0)
 
-    ## extract screenshots and features
+    ## extract screenshots and features... comment this while match screenshot online
     #adb.extract_pic("D:\\zzzj\\1\\features1")
     #ec = ExtractConf()
     #ec.extract_conf("D:\\zzzj\\1\\features1")
