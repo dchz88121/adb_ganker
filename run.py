@@ -333,8 +333,8 @@ if __name__ == "__main__":
         time.sleep(1.0)
 
     ## extract screenshots and features... comment this while match screenshot online
-    #adb.extract_pic("D:\\zzzj\\1\\features1")
+    #adb.extract_pic("D:\\zzzj\\1\\features")
     #ec = ExtractConf()
-    #ec.extract_conf("D:\\zzzj\\1\\features1")
+    #ec.extract_conf("D:\\zzzj\\1\\features")
 
 
